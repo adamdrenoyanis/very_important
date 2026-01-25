@@ -74,10 +74,10 @@ function handleNoClick() {
   const siButton = document.querySelector(".si-button");
   noButton.textContent = messages[messageIndex];
   messageIndex = (messageIndex + 1) % messages.length;
-  const currentSize = parseFloat(window.getComputedStyle(SiButton).fontSize);
+  const currentSize = parseFloat(window.getComputedStyle(siButton).fontSize);
   siButton.style.fontSize = `${currentSize * 2.0}px`;
 }
 
 function handleYesClick() {
-  window.location.href = "yes_page.html";
+  window.location.href = "si_page.html";
 }
